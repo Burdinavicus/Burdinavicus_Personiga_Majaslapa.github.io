@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="lv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manas mājaslapa</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Mani projekti</h1>
+    <nav>
+      <ul>
+        <li><a href="#bio">Par mani</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Saziņa</a></li>
+        <li><button id="theme-toggle">🌓</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="bio">
+      <h2>Biogrāfija</h2>
+      <p>Es esmu Rīgas Tehniskās koledžas audzēknis, kurš aizraujas ar programmēšanu, web dizainu un tehnoloģijām. Mācību laikā esmu guvis pieredzi dažādās programmēšanas valodās, kā arī apguvis tīmekļa tehnoloģiju pamatus, tostarp HTML, CSS un JavaScript.</p>
+    </section>
+
+
+<section id="portfolio">
+  <h2>Projekti</h2>
+  <p>Šeit ir tā mana praktiskā darba, kas izpildīta prakses laikā 2025.06.02-2025.06.25:
+    <a href="https://burdinavicus.github.io/" target="_blank">Mājaslapu izstrādes kalkulators</a>
+  </p>
+  <button id="show-gallery-btn">Parādīt projektu</button>
+
+  <div id="gallery" style="display: none; margin-top: 1em;">
+    <h3>Galerija</h3>
+    <div class="gallery">
+      <img src="img/photo1.jpg" alt="1">
+      <img src="img/photo2.jpg" alt="2">
+    </div>
+  </div>
+</section>
+
+    <section id="contact">
+      <h2>Saziņas forma</h2>
+      <form>
+        <input type="text" placeholder="Vārds" required>
+        <input type="email" placeholder="E-pasts" required>
+        <textarea placeholder="Ziņa" required></textarea>
+        <button type="submit">Sūtīt</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year"></span> Kirils Burdinavicus.</p>
+    <p>Apmeklējumi: <span id="hit-counter">0</span></p>
+    <div class="socials">
+      <a href="https://www.instagram.com/kirillburdinavicus?igsh=eG1hZ2F0aTVicHds" target="_blank">Instagram</a> |
+      <a href="https://github.com/Burdinavicus" target="_blank">GitHub</a>
+    </div>
+  </footer>
+</body>
+</html>

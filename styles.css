@@ -1,0 +1,58 @@
+/* Gaišais režīms (noklusētais) */
+body {
+  font-family: sans-serif;
+  background: white;
+  color: black;
+  transition: background 0.2s, color 0.2s;
+}
+
+header, footer {
+  background-color: #eee;
+  color: black;
+}
+
+/* Tumšais režīms */
+body.dark-mode {
+  background: #121212;
+  color: white;
+}
+
+body.dark-mode header,
+body.dark-mode footer {
+  background-color: #1f1f1f;
+  color: white;
+}
+
+body.dark-mode a {
+  color: #90caf9; /* gaiši zils tumšajam fonam */
+}
+
+body.dark-mode input,
+body.dark-mode textarea {
+  background-color: #2c2c2c;
+  color: white;
+  border: 1px solid #444;
+}
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+}
+
+.gallery img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  object-fit: cover;
+  flex: 1 1 300px; /* minimālais platums – elastīgs */
+}
+
+
+body.dark-mode form button {
+  background-color: #444;
+  color: white;
+  border: none;
+}
+
