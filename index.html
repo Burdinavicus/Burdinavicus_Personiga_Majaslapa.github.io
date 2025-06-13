@@ -1,54 +1,61 @@
 <!DOCTYPE html>
 <html lang="lv">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Manas mājaslapa</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kirils Burdinavicus — Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
   <script src="script.js" defer></script>
 </head>
 <body>
   <header>
-    <h1>Mani projekti</h1>
-    <nav>
+    <h1>Kirils Burdinavicus</h1>
+    <nav aria-label="Galvenā navigācija">
       <ul>
         <li><a href="#bio">Par mani</a></li>
         <li><a href="#portfolio">Portfolio</a></li>
         <li><a href="#contact">Saziņa</a></li>
-        <li><button id="theme-toggle">🌓</button></li>
+        <li><button id="theme-toggle" aria-label="Pārslēgt tēmu">🌓</button></li>
       </ul>
     </nav>
   </header>
 
   <main>
+    <!-- BIO -->
     <section id="bio">
       <h2>Biogrāfija</h2>
-      <p>Es esmu Rīgas Tehniskās koledžas audzēknis, kurš aizraujas ar programmēšanu, web dizainu un tehnoloģijām. Mācību laikā esmu guvis pieredzi dažādās programmēšanas valodās, kā arī apguvis tīmekļa tehnoloģiju pamatus, tostarp HTML, CSS un JavaScript.</p>
+      <p>
+        Es esmu Rīgas Tehniskās koledžas audzēknis, kurš aizraujas ar programmēšanu. Mācību laikā esmu guvis pieredzi dažādās
+        programmēšanas valodās, kā arī apguvis tīmekļa tehnoloģiju pamatus — HTML, CSS un JavaScript.
+      </p>
     </section>
 
+    <!-- PORTFOLIO -->
+    <section id="portfolio">
+      <h2>Portfolio</h2>
+      <p>
+        Šeit ir mana praktiskā darba rezultāts, izstrādāts prakses laikā (2025.06.02–2025.06.25):<br />
+        <a href="https://burdinavicus.github.io/" target="_blank">Mājaslapu izstrādes kalkulators</a>
+      </p>
 
-<section id="portfolio">
-  <h2>Projekti</h2>
-  <p>Šeit ir tā mana praktiskā darba, kas izpildīta prakses laikā 2025.06.02-2025.06.25:
-    <a href="https://burdinavicus.github.io/" target="_blank">Mājaslapu izstrādes kalkulators</a>
-  </p>
-  <button id="show-gallery-btn">Parādīt projektu</button>
+      <button id="show-gallery-btn">Parādīt projektu</button>
 
-  <div id="gallery" style="display: none; margin-top: 1em;">
-    <h3>Galerija</h3>
-    <div class="gallery">
-      <img src="img/photo1.jpg" alt="1">
-      <img src="img/photo2.jpg" alt="2">
-    </div>
-  </div>
-</section>
+      <div id="gallery" style="display: none; margin-top: 1em;">
+        <h3>Galerija</h3>
+        <div class="gallery">
+          <img src="img/photo1.jpg" alt="Projekta attēls 1" />
+          <img src="img/photo2.jpg" alt="Projekta attēls 2" />
+        </div>
+      </div>
+    </section>
 
+    <!-- CONTACT -->
     <section id="contact">
       <h2>Saziņas forma</h2>
-      <form>
-        <input type="text" placeholder="Vārds" required>
-        <input type="email" placeholder="E-pasts" required>
-        <textarea placeholder="Ziņa" required></textarea>
+      <form id="contact-form">
+        <input type="text" name="name" placeholder="Vārds" required />
+        <input type="email" name="email" placeholder="E-pasts" required />
+        <textarea name="message" placeholder="Ziņa" required></textarea>
         <button type="submit">Sūtīt</button>
       </form>
     </section>
@@ -58,8 +65,8 @@
     <p>&copy; <span id="year"></span> Kirils Burdinavicus.</p>
     <p>Apmeklējumi: <span id="hit-counter">0</span></p>
     <div class="socials">
-      <a href="https://www.instagram.com/kirillburdinavicus?igsh=eG1hZ2F0aTVicHds" target="_blank">Instagram</a> |
-      <a href="https://github.com/Burdinavicus" target="_blank">GitHub</a>
+      <a href="https://www.instagram.com/kirillburdinavicus?igsh=eG1hZ2F0aTVicHds" target="_blank" rel="noopener">Instagram</a> |
+      <a href="https://github.com/Burdinavicus" target="_blank" rel="noopener">GitHub</a>
     </div>
   </footer>
 </body>
